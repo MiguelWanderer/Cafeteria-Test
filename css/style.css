@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fafafa;
+    background-color: #000000;
 }
 
 /* Colores personalizados para componentes Bootstrap */
@@ -18,7 +18,7 @@ body {
 
 .btn-coffee {
     background-color: var(--secondary-coffee);
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     transition: background-color 0.3s ease;
 }
@@ -44,4 +44,26 @@ body {
 .card-img-top {
     height: 200px;
     object-fit: cover;
+}
+
+/* =========================================
+   AJUSTES PARA MODO OSCURO
+   ========================================= */
+
+/* Cuando el HTML tiene el modo oscuro activado, cambiamos el fondo general */
+[data-bs-theme="dark"] body {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+/* Oscurecemos las secciones que originalmente eran blancas o grises claras */
+[data-bs-theme="dark"] .bg-light {
+    background-color: #2b3035 !important;
+    color: #f8f9fa !important;
+}
+
+/* Ajustamos el color de las tarjetas en modo oscuro para que no se pierdan */
+[data-bs-theme="dark"] .card {
+    background-color: #343a40;
+    border-color: #4e5d6c;
 }
