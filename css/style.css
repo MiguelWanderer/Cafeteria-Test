@@ -55,13 +55,6 @@ body {
     background-color: #212529;
     color: #f8f9fa;
 }
-
-/* Oscurecemos las secciones que originalmente eran blancas o grises claras */
-[data-bs-theme="dark"] .bg-light {
-    background-color: #2b3035 !important;
-    color: #f8f9fa !important;
-}
-
 /* Ajustamos el color de las tarjetas en modo oscuro para que no se pierdan */
 [data-bs-theme="dark"] .card {
     background-color: #343a40;
