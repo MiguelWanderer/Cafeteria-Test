@@ -1,0 +1,47 @@
+/* Copilot: agrega estilos personalizados para una cafetería moderna */
+
+:root {
+    --primary-coffee: #4e342e;
+    --secondary-coffee: #6d4c41;
+    --accent-coffee: #d7ccc8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+}
+
+/* Colores personalizados para componentes Bootstrap */
+.bg-coffee {
+    background-color: var(--primary-coffee) !important;
+}
+
+.btn-coffee {
+    background-color: var(--secondary-coffee);
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-coffee:hover {
+    background-color: var(--primary-coffee);
+    color: var(--accent-coffee);
+}
+
+/* Estilos de la sección principal (Hero) */
+.hero-section {
+    height: 60vh;
+    background: linear-gradient(rgba(78, 52, 46, 0.7), rgba(78, 52, 46, 0.7)), url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=1600&q=80') center/cover no-repeat;
+    margin-top: -56px; /* Ajuste para que suba detrás del navbar si es transparente, o simplemente debajo */
+    padding-top: 56px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
